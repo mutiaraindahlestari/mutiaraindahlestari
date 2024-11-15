@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumah Makan Mutiara</title>
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #7de030; /* Warna latar belakang header */
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header img {
+            width: 50px; /* Ukuran logo */
+            height: auto;
+            margin-right: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        main {
+            padding: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        footer h3 {
+            margin-top: 0;
+        }
+        footer p, footer form {
+            margin: 10px 0;
+        }
+        footer form label {
+            display: block;
+            margin: 5px 0;
+        }
+        footer form input[type="text"], 
+        footer form input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        footer form input[type="radio"], 
+        footer form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        footer form input[type="submit"] {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer form input[type="submit"]:hover {
+            background-color: #ff4500;
+        }
+        footer div.social-icons {
+            margin-top: 15px;
+        }
+        footer div.social-icons a img {
+            margin: 0 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="https://lh3.googleusercontent.com/p/AF1QipO3ky5f_5sKqlr6qKWSKGANoeQv4V_er0VRu-rm=s680-w680-h510" alt="Logo Restoran"> <!-- Ganti "logo.png" dengan path logo Anda -->
+        <h1>Rumah Makan Mutiara</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+        <section id="home">
+            <h2>Selamat Datang di Rumah Makan mutiara</h2>
+            <i>Rumah makan ini menawarkan hidangan spesial yang terbuat dari bahan-bahan segar dan berkualitas. Kami berkomitmen untuk memberikan pengalaman kuliner terbaik kepada setiap pelanggan.</i>
+            <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/0423127d-5287-4984-a4ce-0933389e4889_restaurant-image_1614139585254.jpg"" alt="Gambar Restoran" style="display: block; margin: 0 auto;">
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <!-- Tabel Menu -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Nama Makanan</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/1060829b-786e-46c1-9a24-6854d0101789_Go-Biz_20201016_123148.jpeg?auto=format" alt="Salad Buah" width="100"></td>
+                        <td> Nasi Rendang</td>
+                        <td>Rp15.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e610354a-e40b-440f-8f45-67978d46635c_Go-Biz_20201016_122434.jpeg?auto=format" alt="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e610354a-e40b-440f-8f45-67978d46635c_Go-Biz_20201016_122434.jpeg?auto=format" width="100"></td>
+                        <td>Nasi ikan tongkol</td>
+                        <td>Rp15.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5727c5d4-9074-455e-8281-4d3d16a316a5_Go-Biz_20201016_193623.jpeg?auto=format" alt="Pasta Alfredo" width="100"></td>
+                        <td>nasi kepala ikan kakap gulai kuning</td>
+                        <td>Rp25.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/da6cb08a-cf04-4065-a25a-8a3dfd95eaa8_Go-Biz_20201016_194055.jpeg?auto=format" alt="Jus Jeruk" width="100"></td>
+                        <td>teh es manis </td>
+                        <td>Rp5.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+<section id="menu">
+            <h2>Menu</h2>
+            <!-- Tabel Menu -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Nama Makanan</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4aa7d1cd-1873-4cc1-a74a-9c1a14c60099_Go-Biz_20201016_194326.jpeg?auto=format" alt="Salad Buah" width="100"></td>
+                        <td> Nasi Ayam bakar</td>
+                        <td>Rp15.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/33277ce6-3742-4dc9-b6f1-5e68084dc5f9_Go-Biz_20201016_185139.jpeg?auto=format" alt="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e610354a-e40b-440f-8f45-67978d46635c_Go-Biz_20201016_122434.jpeg?auto=format" width="100"></td>
+                        <td>ikan bakar bawal</td>
+                        <td>Rp9.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/32d3a39c-ccab-4bcf-998c-e6ed438177da_Go-Biz_20201016_194424.jpeg?auto=format" alt="Pasta Alfredo" width="100"></td>
+                        <td>nasi peyek udang</td>
+                        <td>Rp11.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f1ed31ed-0daa-4737-a435-960e0ae5d423_Go-Biz_20201016_191559.jpeg?auto=format" alt="Jus Jeruk" width="100"></td>
+                        <td> Nasi lele goreng </td>
+                        <td>Rp15.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimoni Pelanggan</h2>
+            <ol>
+                <li>"Makanan di sini luar biasa, pelayanan cepat dan ramah!" – abid</li>
+                <li>"Tempat yang sempurna untuk makan bersama keluarga." – zelin</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h3>Kontak Kami</h3>
+        <p>Alamat: Jl. Adinegoro No.41, Batang Kabung Ganting, Kec. Koto Tangah, Kota Padang, Sumatera Barat</p>
+        <p>Telepon: (0751) 480269 | Email: info@rumahmakanmutiara.com</p>
+        
+        <!-- Formulir Reservasi -->
+        <h3>Formulir Reservasi</h3>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="date">Tanggal Reservasi:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label>Jumlah Tamu:</label>
+            <input type="radio" id="2pax" name="guests" value="2" required> 2 Orang<br>
+            <input type="radio" id="4pax" name="guests" value="4"> 4 Orang<br>
+            <input type="radio" id="morepax" name="guests" value="more"> Lebih dari 4 Orang<br><br>
+
+            <input type="checkbox" id="terms" name="terms" required> Saya setuju dengan syarat dan ketentuan<br><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+
+        <!-- Tautan Media Sosial -->
+        <div class="social-icons">
+            <h3>Ikuti Kami di Media Sosial</h3>
+            <a href="https://www.facebook.com/Rumah makan mutiara " target="_blank">
+                <img src="data:image/png;base64,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" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="https://www.instagram.com/Rumah makan mutiara" target="_blank">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBEQACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAAAQQHAwUGAv/EAE0QAAEDAgIECgMMCAUDBQAAAAEAAgMEEQUhBhIxQQcTIiMyM0JRYZFxgZIUFzZDUlV0obGys9FEU1RicnODwSRj4fDxgqLCJSY0RWT/xAAaAQACAwEBAAAAAAAAAAAAAAAAAwECBQQG/8QAPBEAAgECAgUKAwYGAwEAAAAAAAECAxEEIQUSMUFRExQiMjNScYGhsWHR8BUjNEJykSRDU8Hh8QZighb/2gAMAwEAAhEDEQA/ALpIFufz7kALxm2dkIADb47MdlABb9d0OygA3c90NyADPbL0NyAHs6zq9yAFn2+q3ehADsLcrOPshAC2Zu6rcgA3Xd1Q2IAiy4lQQuLZ62mZGNzpWgqVGT2ImzI50gwZrrHFKXi+7jAVbkp90D1HjeFPIbHiVJxfcZQPtQ6c1uIJsU0U5/w8sckW/i3h2XqVLNbQPefY6regAAHZ6vuQAW+RlF2roANuber3oAN3NZM7V0AP+T0N6AFn8Tk3egB/yRlvQAs9sHR3oAYA+Ky+WgA5gbR9qAA2A/xHqQAtnXepADNh12zcgBZDrej2UAPMDneh2UAGfxnQ3IAN3OdXuQB5c4NBMzg2EC4JNgPWgDmcW02wqgc+GN7qx7dkcVrD0uToUJSzeQ+GHnLN5HJ1+nOM1p1KR8dDFrAc20PcB4ucPsAXTHDwW3McqEVtNJWYlWTge6auomJz5cpNk2MUtiDVS2GtI1nFxzJTUUaPNvBWFtCIB3Kbi2hse+M3Y9zPFpsVLs9qFtG3odKsdoLcRiUzoxtjmtI0+efkQlSw9KW4jWZ0+FcJLuTHi1EGtO2Sm2eyc/IrmngbZwYKR22GYvQYpHr4dVMlj7Tb2cPSDmuOdOcH0kXuTu/U6vtKgBu5vodpADGfU9DegAzPVdDegAF/itm9ACFz1GQ3oAe3qtnbQAcx/slAC2jn8kAG3KYWG4oAOl12Q7KAHfsy9HslABbW602Z2fFAC1tYc5YM3IA0OkmlFDggMUh90VPYp4zmPFx3BMhSczoo4adX4IrbGdIsSxlx91zasN+TBHkxv5+krrhTjE0oYeFPYjVxt1rg5Ad20JtyZIyPIaA0AEWt4Ed91Itowu5W1WFtHlAtoRVkLaEQrC2hIFtC2KyFNHkqSlj3BNLTytmgkfFI05OYbHzUNJqzJud1o5whSwltLjbXSxbBUsHKH8QG30j61xVcGnnD9iVIsSmqIaiBk9FIyankFw9puFwNNOzLmW2xsXQO0qAAXB5mxbvQAtnU5jegAAtlDYt3oAN/NZjtoAfMb/7oAOlfj8rbEAGbjabIDooAOl12QGxABtHO5MHRzQAhyusNm9lAHD6XaZ8Q59BhLwZGnVknGYZbc3vPimwhxNTC4BtKdTZwK7e5z3ue8lznG5c43JPiupM03FLJAxt7kmwCuKkZXHi8hYi3cpFtGNxLuln6FKKOJ5VrlGhIFNCUlGgIVkxTR5IUoW0JSLaFsUi2jyVYoCCDcaN6R12A1GtTuL6Zx5ynccneI7j4pVajGqs9pKZb2CYtS4vQtqsPfrRO5L2HpMdvB/34rIqU3TlZjE7k++rlDm0qoB0epzadqAC+rlDm3fldAB0TzWYPSQA9WEbXD2kAA5zrsvTkgBNu/rcrbEAA5fW7BsugA6RtJcNBysgDhNOdKSwPwnD5LO2TysObB8kHvttKtFGxo/A3tVmvAr4DLIeScmbEketR1r6pt3piYpoGP1b3zB2hXTFyiIuLsyMlZMW0K4VrlGhKRbQlIpoFJRoRU3FNBkpTFtHkq10LkhZFSLaPP9lItoQBNrC57grFGMtc05tIQQbLAccq8DrRUUhBaRaSM7Ht7j/bu80urSVSNmSnYuXCMSp8UoI6ygJdHIOUCc2O3grHnBwlZjCaTq9SLtPSVQDoG0QuDttmgBnknm879LfZABqQja7P0oADaTrcu7cgA6fW5W2IAR5YPGXAGxAHNacaQnCMPEMJHuyfKL9xu9/5eKhs0dHYPnNS8uqtvyKnuSSSSSTe52nxPipTPUNGambryHK5Dch4piYmasZ4Y3NeOUXBw5YPerpiJbMjPhGA4hjU7mUMN42uIdK82Y317z4K+ukIr16dFdN5nYUfBo3UBrMScXfJjjyHrKry7WxGbPSN+rEk+9rQ/t9T5BHOJCnjpd1B72tD+31PkEc5kRzyXdQe9rQ/t9T5BTzmRXnk+Ae9rQ/t9T5BHOpFedTD3taH9vqfII51IjnEhe9pQ/t9T5BHOpFeXYe9pQ/OFT7IU87mRyrPD+DGiI5OI1APfqgqVi5b0Vc2zRYxweYlRMMlFKysY3MtA1X29Gwp0MXB5PIre5yrIHgSN1XNlD9VzSLOb35Lq1luKuJ74siKVpuYxmLouUsQlcg3+hukL8AxEa7iaKchtQ3u7ngd4+z0BIxFFVI/EsmXK141WmAh7HgHWGdwsguehyDaLMHbvQAdDKPMO6XggADIvlketAA3nSeMytstkgBDnMpcg3YUAYqmeOGnlnqzxcUTS4u2ZBF7FoQc5KEdrKUxvFJsYxKatmOTjZjfktGwJN7s9xhsNHD0o015+JCY1ztgV0y7R6aSw3vmO4q6YqUbm90WwufH8SFOXFlPGNaZ7BY27h4lXuZ+MrLDw1t+4tulp6egpW09PG2GnibZoGQaFU8zKUpyu82znMR4QMJo5DFAyarc02LogA3zNr+pWjBs7aejq0leVkQffNpfmup9tqZyD4jPsyfeXqHvm0vzXU+21SsO+JV6Ol3l6h75tL811PttU82fErzF95B75tL811PttRzZ8SvMn3kHvm0vzXU+21TzV8SOZy4h75tL811PttRzWXEq8LJbxe+bS/NdT7bUc1lxK83fE9R8JtEXgSYbVNG8hzD/AHRzSW5lXRZ1GDY5QY1DxtBMH22scNVzfSEidOUHmKlFo0WnOjTa6mkxGhbq18TbvDR1zBuPj3JtCtqvVlsIRVEk0kjQHHklakQaMKsLaDu9KCCzuDPHZKmhfhc7wZYBeInaY/8ARZuMpastdbC8Wdv1eUWbTt3rjLDdyCAzMO6XggAMUV83fWgBHnOu5FtlkAOxkFn8m2yyAOG4T8YfBQ0+FsPLqDry23MBy8z9hSqsrKxv6AwuvUlWl+XZ4v5fIriMaxNtg2+ASUz001bMkOIiaA315piYjVuYSbkkpiZDiWvwZUTYdHfdJFn1ErnE94adUfYVe55XS03LEavA1/Chi8tOynwunkLBO0yTEbS29gPWb+StEborDqV6rWzYV1YJqZsyQldMW4hZMTQtoSurC2gCsLaGVItoSkW4mWkpZ62pjpqSN0s0h1WMbtJQ2oq7FStFXZ0s+gGNwUxmtTSkC5jikJf9Yt5H0XSViYXsc3LQeRpKLEp8Hro6qkDuMiPRO1w3tP1p0oqaswlFNF400sdVTQ1EebJWB7T4EXWW1Z2OR5FH6U0LaDSOvpWjVY2YuaO4O5Q+0LVoy1oJl9qNSQnFGhEWVhbViZguJPwjFabEIyeZfd7R2mdoeX9lSpBTg4sEy9oXtMTJKUtkjkaHBw2EHYfJYrydhh66B5vlB3SvuUAHFRfLPmgAI44cvk2QAdb0+SBs8UAVFpdOcUx+qmLjxbDxbD+60fnc+tZ9SetNnttGw5DDRW/a/H/VjQyDiwLDK2XiPFSmaC6RhBTLkuJ6V0xTRc3B/wDBGg/qfiOT1sPG6V/GT8vZHFcKPwni8KKP78isa2iFfDf+n7I5JWTO9oExMW0JMTKNGzwvR3FsVaH0VE8xH46QhjPM7fVdTyiiclavSp9Zm/i4OMULAZaykjd3DWcPPJRzhHE8fT3JkWu0CxymYXQsgqgOzFJZx9TrD61aNeD2gsXSltyOaqIJqad0FRDJDK3ax7bHy2pylfMdlJXTOn4NZYItIzxxa174XMiLvlXBt6SAfJJxF3DI5MUnqZFrnZ6Vw7TOKL0inp6nHq+ehIMD53Frm7Hd5HgTc+tatJNRVzvhF6quXLox8GsJ+hQ/cCzqvXficU+syquEL4X4h/T/AA2rQw3ZoZFdFHOroKtCIupTKOJ5IVri2i3ODjEjU6NxQ9J9M4wu/h2t+o29SysVBRqNreWjsOpA4vo5623wXMSHEsPbQAdaOc5Ftl0ARsRn4qgnnk5PFRkjyVZy1YtjKMOUqRjxZUk41SCHA3GY8dqydY9tGzIFRGX9LO2xXUjohKxBewtKcpD07iDsx6VdMrKJdHB98EMP9En4jl1Q2HidK/jJ+XsjiOFL4UxfQo/vyKWzY0Mv4R/qfsjkroTNFoYTExTRYmh2hcYijxDGItd7gHR0zxk3uLhvPghyMDG493dOl+53M80NJEZZnxxRMGbnkNACrtMqMXJ5K7NHLptgEb9UVhfbeyNxCnk5M6lgcQ1fVJ2GaQ4Tirw2hrY3yfqzyXeR2ocZLcJnQqU+sj1jeC0ONU/E1sIcbciQDlMPgURm4ZoinVlTzRUukGFVmA15ppTyenBK0WuBv9IXdCamrmpTnGrG6MVRpBjFVS+5p8RnfCRYtuBf0kZlSqcNqRXkYLNI1iaDReejHwawn6FD9wLMq9d+JmVOu/EqvhB+F+If0/w2rQw/Zr63j6a6COdTgcRKwpoSlC2jt+CusdBiNXSdiaIPA8Wmx+orjxi6KZVKxZduLPJ5WttPcs8kfEsPbH1IAWUw5XJQwNRpTMW4JPcWvZnpuVz4qWrSZ26OjfER+GfoVzNHrZrKTPVRZEkjTExsZESWK+5MUh0ZEKSPVuU6LHp3Ln4Pfgfh/ok/Ecuyn1UeI0v+Nn5eyOI4VPhRF9Cj+/IqzZtaEX8I/wBT9onI3Upmm0dLoDhDMWxzWnaHU9K0SSMIuHOJ5I9GRP8A023piZlaUruhRy2yyX92WriuIQYXh89bU34qFpcQ3aTuA8SVJ5mjSlVqKEdrKZx7GqvHav3RVvOoOrhB5EY9G8+KZHI9PQw0KELRNamqReUU9o7kEFvSGw3sR6Fe4txLI0B0qlrnjC8Tk15w0mCZ214HZPjbzz7kmpTS6SMbG4VQ6cDeaZ4M3GMDmjY3/EwgywO36w3egi4VKctWVzkw9Tk6ifEpm98xsK0DYkgUi2i89GPg1hP0KH7gWbU678TJq9pLxKs4QPhfiH9P8Nq78P2a+t500V0Ec6nEtCUi2hKwpo3+gU5g0qo7fG60Z9Yv/ZIxCvTYtouPOKzdutl6FlkBxDT27IAXX5dHVQBpNL38ZhIFrc4PWuPHu1PzNDRnb+Rwz2LKTPRRZGkjTExqZFkjV0xsZEWSJMTHRkW1oCLaJUA/mfiOWjR6iPHaWd8ZPy9kcLwqH/3TD9BZ9+RVqPpG9oJfwj/U/aJyKqmarRaHBXTNjwSpn7U1SfUAALfb5p8dh5TTkr14x4L/ACYOFWrc2koqNh5MjzI8d9tn2lWJ0NTTlKbK4CsmbjQ0xMW0CYmUaM9DUSUddT1MJs+KRrh5q21WEVIKUWi+mObIxrhscLj1rjPLvJlFY1AKbGK6FuxlQ+w7hckLRg7xRvU86aZCVyWi89GPg1hP0KH7gWdU678TErdpLxZVvCB8L8Q/p/htXdh+zX1vOygvu19bznU4u0JSKaEpQuSNlou7i9I8Nf3Tt+vL+6pV6jFSRd3VGwOtreOxZKFD9z/v/UgA68Zcm3cgDTaUnjsMBtbVeFxY/svM7tHO1byOMfGsdM9AmR5GJiYxMjSRq6YxMiyRpkXmhqZaWg4tovRD+P77lqYfskeU0p+Ln5eyOD4VGk6TRED9Cj+/Il1naaPQaB/CP9T9onHA5qqZsOJaXBVUtlwWqg7UNQcvAgH8/JdFN5HktO03HEKXFf4I/CrSudS0NY1t2xvdG891xl9itINCVFryg/ErlCZ6BoExMW0MJiYtokYfTPrK+mp4heSSRrWj1q+tkIqvUg5PcXwwBkbWjY0W9S5jybzKLxuYVOM10zOi+ofb0XsF3QySPR04WpxXwISaQ0Xnox8GsJ+hQ/cCz6nXfiYVbtZeLKt0/wDhfiH9P8Nq7KHUX1vO7Dr7qP1vOeTxjQlItoSlC2jZ6MNL9IsOAzPHhUq9RiZrIuzqstuv9SytxzD9zk5l/wBSAC3G5sOrbuQBrscAqMLls22pZxHoXJjY3oP4HVg5atdHHSRrBTN9MjSMTExiZGkjTExsWRpI9uSumMUsiy9DRbRujH8f33LXw3ZI8vpP8XPy9kcVwmMvpFGf/wAbB/3vSMS+n5G7oSVsM1/2fsjiZYiMwFRSN2MrnQcH2MtwnHRHUO1aerAikcT0XX5B8yR610UpZmZpnCcvh9aO2OfzLXxWgp8UoJqKqaTFM3VNtoO4jxC6GrnjqNaVGoqkdqKYx7BKzAqsw1sZLCebma2zH+jx8FS1j2WGxVPFQ1ovPhvNarJjmj0A67QASXGwAF7/AJq6YqSsm2WToFotJQyjFcSi1KggiGJwzjB3n97w3AqW8jzukcZGf3VPZx4m80yxluDYJLIxw91TXigbv1jv9W1EFdnJg6HLVktyzZTLWhrQ0bALC660z0LQEK6YtovPRj4NYT9Ch+4FxVOuzztftZeLKu4QPhfX/wBP8Nq66PURpYZfdR+t7OdsnDGhK1xbQbNyLi2joNB6XjNJ6J52R3kPl/qlV5WpsRV6rLe6s2PKLtl9yzjjHxDj2/MIAXXX1OTbJAGOoZ7qp5I7WOqQfFLqx1qbiXpy1ZpnFSMzII3ry0WehjK+ZHfGmJjUyPIxXTGJkaSPJMixiZYeiIto9SD+P75W1hexX1vPN6Rd8TL63HH8IzdbHoj3UrPvPXNiu08v7m1oZ2w78f7I5CWPLYkpmzCREfTg3J6Ite/inRkOjUydiwNEdNIdSHDsZlDJAA2KpJ5Lh3OO4+K66dTiea0lomV3WoK63rh4HdTQw1cJZKyOaJ21rmhzSE7IwIzlCV4uzNHNoTo/LJre4Qy5uQx7gPK6iyO6OlMUlbWJ2G4BhWFv16Kiijk/WWu7zKk5quLr1cpyyHjeM0OC03G1kwa4jkRjNzz4BSRQw068rQRUWkGM1OOVzqmouxoGrFDe4jG235q6PTYfDRw8NRZvezWJqZdoFdMW4l5aMfBrCfoUP3AuWfWZ5rEdtPxfuVbp/wDC+v8A6f4bV2UeojUwivQj5+7OfumjWhKRbRljaNYa4HhfvUi2jtODOG+JVVQWgshhDGkDYT/wubEvJI48TkkixM4rB2ets8FxnIHud1+mUAHW9XyLbfFAB1g5HJ7770AcvicPF1UgAsCdYegrzOLp8lWkjbw09amjXvYkJnUmR3sTExiZHey90xMYmd3oqLYDSj+L7xW5hOxj9bzzuO/ES+txymn7dbG4/ozfvOXJjH975Gxol/cPxfsjlzDe9wfJITNbXI1Q0i7gM7bfBNUhkGa6WEd1/WmRkdUZE3CtIsYwcNjo614iHxMnLj8js9Vk+NRo58RgMNic6kc+Kyf14nQRcJOLNYBLSUcjvlDWb9VymqqzLnoGhfoya9SLXafY7VNcyF8FI09qGO7x63XH1KVMvDQ+Fhm034vL9jm555amZ01TK+aV3SfI7WJ9ZzVkztVOMFaKsvgIGyYmUcR7VdMW0LemJi2i8tGPg1hP0KH7gSZdZnlsT28/F+5VnCB8L6/L9X+G1dVHqI1sGvuI/W9nPpw5ozRjVAJBve2zYpFs8Sk8ptst/iUIpqlq8H1EKDR6OaRl31juN9Ddjfqz9a4q8rzMrEyvM6XOM2k5Wt0bbkkQBgedr/rQAOvMObyttvkgB34zq8iNt0AavGYhNEyZjeVHk70f8rJ0nR1oKqtx24KpaTjxNE5uexYqZqJmB7PBXTLpkaRiYmMTOt0UqA/DuJ7UTzlfcc1t4CadLV4GNpGLVbW4kDTXD3TtirmNuImlsgAubbvLPzUY2m3aaOjReIUG6b3nGTMINgTkLLgTNyLuiFLF355q6Y5MiSx+CYmOUiHNFe6ZGQ+MiMbtNinJjLXPQN9ismLcR+lNTFNDBV0xbR6B3JiYpol4Zh1Ri1ZHRUjSZJDYut0BvcfAK9znr1FRg5yL0pom01LFBGAGRMDGjuAFlRnkJy1pOT3lKaTVjcQ0gr6phux0uq3xDcvsC6YZKx6TDU3CjGL2mvY0ch18ye7YmqRaSPL3HNocSL3CumL1SVhGHPxbEqeijuOOfZ7vksHSPkolJRVxNWShDWZd0TGUrWxBoDGtDWNAyAAsFnbTDvfM9Dm7h2ets8EEBxMh7Q80APrBzWVtu5AC6zKPk22oA8va2dhY2wGx1xtVZRUouLJTs7o5qoiMEzojnbYfBeVr0XRqODNqlUVSKkiO5gSrjkzA+NMTLpmfC6p2HVRlsXMItIB3Lrw1d0Za27eKxFJV4au/cdlFJFUwiSMh8bxcHcQvQRkpq6zMFxcHZ5M0tdopQVTi+N0kBJudQi3kVyzwVOTusjQpaTrU1Z5kF2g1M79Nn8h+SjmUeI9aZqd1epjdoDTH9PqPZb+SlYOPEstN1O4vUxO4PKV23Ean2G/krLCLiXWnaq/IjBJwZ0b/AP7Oq9TGfkrrDpbxi/5BVX8tevzPHvYUfzpV+wz8lPJA/wDkFR/y16/MfvY0nzpV+wz8lZU0V+3qn9NevzH72NJ86VfsM/JX1UVenZ/016/M9xcGlE14L8TrTbuawf8AipsUem6j2QXr8zqMGwLD8EhMWHwamsbue46zneklBmV8TVru82aHTjSVlDTPw2heHV0rbOIPUt7z49wVkdeAwbqNVJ9VbPiVe6FzQH5EDeCmpm8xBxAIBtfamJi3E8HemJlGiyuDnB/cdK7E6plpakWiHczv9ZXPXqazsjEx1XWlqLcdnlEAJbuO5IOEfQPLz1uj4IADFL8oe0UADudHNZfUgBHnBaLIjaEAB5y3FbRtQBExKkbVQjihaaPd3rhx2G5eF49ZHThq3Jys9jOezBIIsvN+JreABgN1eIXPBis4G+wfWnxydwvdWMdNW1NDIfc0lgTctObfJMpYidF9FlqlGFZWkjaxaVarQJ6Xld7Hf2K0Y6R4xON6Mf5ZDOl0A/RZfaCYsfHukLRc+96GN2mdONtJN7QQsdHgWWiKne9GYzpxSj9Cm9oK3PI8C32NU73ozG7T6lb+gVHtBW52uBZaEqd5epjdwh0jduH1HtBWWJXAstBVH+depifwl0LduH1PtBWVdcC//wA/V769TyOE2gOzD6j2grcqiPsCqvzr1GeEujsS3Dqgnu1gp5REfYVXfNGjxbhAxKtY6OhjjpGOy1hdz/PcpUjqo6HpU3ebu/2RzUXPtkDnEvLg4ucbk+kq6Z3TWq0kthk1Wxxyk2s7YFdMU8yGmJlmjeaJYGcbxAcaD7jgN53Df3NHifsUynZZGfjK6owy2v6uW/G1sIawtAAFmgDIDZZc55293cbebylzJ2ZXQAxyMn563R32QAuLl3Py9KAA8sWgytt3IAMndVkRtQA+l1ORG1ACPLyjNnjpFDA1eJ0XGa00Au9o5xv91kaQwV71YeZ3YbEW6EjTrEtY0RPBIVtYlWI8keasmXuR3s9PmmJjFYjSR+CsmMTI8jPBNTGJkd7PBXTGJkaSNMTGxZEkj8FdMdFohyw77JsZWHRkRHsIKamNyYAg7gmJlJRMojcWFw37ExMVJ52ExxabtKumUcT057n9I3TExTikT8CwipxuvZTUrctskh6LG95/sFdM5MTXhQhry/2XBhOH02EUcdJEywZnfe47yfFUbueVrVZVZucntJo5AtLmTs3oFgDqZTZndldACHJ63Mno+CADUm+V/wByAH0uoyvtQAgQ48zYd/igA6XU8n5SAHtGrFk7tFACPKFosnDaj4gazEMOEhdJSjl9pmy58Fk4zR6k3Olt4Hbh8VbozNORqkg3uNoKxGrOzNJO+Z4c26EyUzC9iumXTIz2K6YxMjyMTExiZHkYrpjEyNIxMTGpkaSO6YmMTIssaumNjIiSxXBFk1SHRkRxFxR1nWLdgB3FOTGOWtkhvl3NsBvtu9CumU1N5jHgrplWjb6OYBWY9UAQDUp2m0k7tg9HefBNiZ+NxdPCx6WctyLawfCaTBqMUlPGG3Ny8jlPd3uPernk6+IqV5682Tsmi0ubtxQJA8nKY3J6JQAWsbTZncUAGw87n8jwQA7TnY7L1IAM/iNm+6AAf5PrQAZ/Fbd6ADP4rpdpACy+K6faQAfyunvQBFq6GCr6PJlG1w/3muPE4KnXzeT4j6NeVPwNJU0c1MbSNuNzgsGthKtF9JZcTSp14VNmRHc1c6dh6ZhexXTLpkZ7ExMumR3sV0xqZHkYmJl0yM9iumNTI0kaYmMjIwmECztXWIPRCbFjNYiVLDcty/eTNYdCW8hNpJ5pmx00T5XuOTGN1ifUmwd9g6VSMY60mkvidto9oDLIW1GPOMTTm2ljPKd3aztw8B5rphT4nn8bpuMbww+b47vJb/rbtLBpqeGlgZBFE2INFmNaMgE481Ocpy1pPMy/zenuQVA/5vT3IAMvjfUgAyvz+3cgB/zdvYQAWn/4IQAZ/EbtqAFtzh29oIADfLidva/2UAHhCeX2kAG3qen2kAGRPNDnN6AD+WOc3oAWTmlrOnvuNqhq6sBDnwyCccgFko6WquGto6lUzXRfw+R008VOHxNbPhFRciMtkPcMj9eSzamja8OraXodkMZTe3I19RTSx9ZG9vpaQuWVKpHrRa8jqjVg9jIcjFCY9MjvYmJjEyPIyyupDEzDxGsQAxzi7Zqi6dG72FuUSWbJDcAxSqkIhpJGtcelLyB9efkuiFGpLcLljsPTWclf9zaUWgoLv/Uak636qDK//Uf9F1wwveZw1dNu1qUf3Oow7C6LDIxHSU7IX94FyfWuqMIx2GRXxFWu71JXJo3B/WblYQA/zesPRQAbOtzftagANvj76+5AB/OGfZQAXsef6W5ABsPO7ewgAtUbj9iAAZf/AB8/lIAL2HM5negB/wAnM9pAAD+pzd2kAIW2xZv3hADyvePOTeEAH8Gcm8fagBZbWZy7wgAG27M5e0EAHiOt3hABuyF5d4RYFkY3wQyCz4WGTuLQlulB7YoupyWxmI4fRkappojIN2qq83pd1FuXqr8zG2ho2ggUsIk7tQFSqNNbIoHXqvbJmZkbI26rGNZJuDQAmaqWxC3KUtrPQt2+t3BSQAve7uu3BAD2nl9aNgQAb7u6zshACvnzmUnZCADInnsn7kAPI9dk7cgA29dkdyAA2J57I7kALaeeyPYQA/8AEHdZAH//2Q==" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="https://twitter.com/Rumah makan mutiara" target="_blank">
+                <img src="data:image/png;base64,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" alt="twitter" width="30" height="30">
+            </a>
+        </div>
+
+        <!-- Google Maps Iframe -->
+        <h3>Lokasi Kami</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255320.5015254264!2d100.069209825!3d-0.8465470999999937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4c12381751fe9%3A0x30ae3dd7270a7c9c!2sRumah%20Makan%20Mutiara!5e0!3m2!1sid!2sid!4v1731659207680!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+</body>
+</html>
